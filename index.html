@@ -15,7 +15,7 @@
     <div class="product-container">
       <div class="image-gallery">
         <div class="main-image">
-          <img id="mainImage" alt="Main product image"/>
+          <img id="mainImage" alt="Main product image" />
         </div>
         <div class="thumbnail-images" id="thumbnails"></div>
       </div>
@@ -37,29 +37,30 @@
             <div id="sizeOptions"></div>
           </div>
         </div>
-        <div class="quantity-section">
-          <button id="decreaseQuantity">-</button>
-          <input type="number" id="quantity" value="1" min="1" />
-          <button id="increaseQuantity">+</button>
+        <div style="display: flex; gap: 20px">
+          <div class="quantity-section">
+            <button id="decreaseQuantity">-</button>
+            <input type="number" id="quantity" value="1" min="1" />
+            <button id="increaseQuantity">+</button>
+          </div>
+          <button class="add-to-cart" id="addToCart">
+            <img
+              src="./assets/cart.svg"
+              alt="Cart"
+              style="
+                width: 1rem;
+                height: 1rem;
+                margin-right: 0.5rem;
+                margin-top: 5px;
+              "
+            />
+            Add To Cart
+          </button>
         </div>
-        <button class="add-to-cart" id="addToCart">
-          <img
-            src="./assets/cart.svg"
-            alt="Cart"
-            style="
-              width: 1rem;
-              height: 1rem;
-              margin-right: 0.5rem;
-              margin-top: 5px;
-            "
-          />
-          Add To Cart
-        </button>
-
-        <p id="description">Product description</p>
         <div id="cartMessage" class="hidden">
           Added to cart: <span id="cartDetails"></span>
         </div>
+        <p id="description">Product description</p>
       </div>
     </div>
     <script src="./script.js"></script>

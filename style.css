@@ -1,5 +1,5 @@
 body {
-  background-color: #EDF0F8;
+  background-color: #edf0f8;
   margin: 0;
   padding: 20px;
 }
@@ -21,7 +21,6 @@ body {
   width: 100%;
   height: auto;
   border-radius: 8px;
-
 }
 
 .thumbnail-images {
@@ -81,13 +80,13 @@ body {
   border: 1px solid #bdb6b6;
   background: #fff;
   cursor: pointer;
-
   border-radius: 4px;
 }
 
 #colorOptions button.selected,
 #sizeOptions button.selected {
-  border-color: #333;
+  background-color: #edf0f8;
+  border: 2px solid #3a4980;
 }
 
 .quantity-section {
@@ -109,6 +108,8 @@ body {
   margin: 0 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  color: #3a4980;
+  font-weight: bold;
 }
 
 .add-to-cart {
@@ -120,7 +121,7 @@ body {
   width: 309px;
   height: 59px;
   border: none;
-  border-radius: 16px;
+  border-radius: 29.5px;
   cursor: pointer;
 }
 
@@ -171,6 +172,7 @@ body {
 
   .quantity-section input {
     width: 80px;
+    color: #3a4980;
     margin: 10px 0;
   }
 }
